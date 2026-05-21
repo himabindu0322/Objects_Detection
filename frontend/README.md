@@ -24,10 +24,14 @@ It connects with the FastAPI backend to perform AI object detection using YOLOv8
 # 📂 Frontend Structure
 
 frontend/
+
 │
-├── index.html
-├── style.css
-├── script.js
+
+   ├── index.html
+   
+   ├── style.css
+   
+   ├── script.js
 │
 
 ---
