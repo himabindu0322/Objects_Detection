@@ -3,14 +3,23 @@ A complete Full Stack AI-powered Object Detection System built using YOLOv8, Fas
 
 # ✨ Features
 ✅ Image Object Detection
+
 ✅ Video Object Detection
+
 ✅ Live Camera Detection
+
 ✅ Real-Time Bounding Boxes
+
 ✅ YOLOv8 AI Model Integration
+
 ✅ FastAPI Backend
+
 ✅ Interactive Frontend UI
+
 ✅ Real-Time Frame Processing
+
 ✅ Browser Webcam Support
+
 ✅ Full Stack AI Application
 
 # 🛠 Tech Stack
@@ -36,16 +45,26 @@ Ultralytics
 
 AI-Object-Detection/
 │
+
 ├── backend/
+
 │ ├── main.py
+
 │ ├── detect_image.py
+
 │ ├── detect_video.py
+
 │ ├── detect_camera.py
+
 │ ├── requirements.txt
+
 │
 ├── frontend/
+
 │ ├── index.html
+
 │ ├── style.css
+
 │ ├── script.js
 
 # 🚀 Future Enhancements
