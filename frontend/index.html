@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Object Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TITLE -->
+
+        <h1>AI Object Detection System</h1>
+
+        <!-- IMAGE DETECTION SECTION -->
+
+        <div class="section">
+
+            <h2>Image Detection</h2>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <br><br>
+
+            <button onclick="detectObjects()">
+                Detect Image
+            </button>
+
+            <br><br>
+
+            <!-- IMAGE OUTPUT -->
+
+            <img
+                id="outputImage"
+                src=""
+                alt="Detected Image"
+            >
+
+        </div>
+
+        <hr>
+
+        <!-- LIVE CAMERA DETECTION SECTION -->
+
+        <div class="section">
+
+            <h2>Live Camera Detection</h2>
+
+            <button onclick="startCamera()">
+                Start Camera
+            </button>
+
+            <br><br>
+
+            <!-- LIVE CAMERA -->
+
+            <video
+                id="video"
+                autoplay
+                playsinline
+                muted
+            ></video>
+
+            <br><br>
+
+            <!-- HIDDEN CANVAS -->
+
+            <canvas
+                id="canvas"
+                style="display:none;"
+            ></canvas>
+
+            <!-- AI DETECTED OUTPUT -->
+
+            <img
+                id="liveOutput"
+                src=""
+                alt="Live Detection Output"
+            >
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
