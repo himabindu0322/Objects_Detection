@@ -25,15 +25,22 @@ The backend handles:
 # 📂 Backend Structure
 
 backend/
+
 │
-├── main.py
-├── detect_image.py
-├── detect_video.py
-├── detect_camera.py
-├── requirements.txt
-├── yolov8n.pt
+
+ ├── main.py
+ 
+ ├── detect_image.py
+ 
+ ├── detect_video.py
+ 
+ ├── detect_camera.py
+ 
+ ├── requirements.txt
+ 
+ ├── yolov8n.pt
+ 
 │
-└── outputs/
 
 ---
 
@@ -47,6 +54,35 @@ python -m venv venv
 ##  Run Backend Server
 
 uvicorn main:app --reload
-
-
 python -m venv venv
+
+# 🧠 YOLOv8 Model
+
+This project uses:
+yolov8n.pt
+from Ultralytics for fast real-time object detection.
+
+# 📸 API Endpoints
+
+Home Route
+GET /
+Response:
+
+{
+  "message": "AI Detection API Running"
+}
+
+Image Detection
+POST /detect
+Upload an image and receive detected output image.
+
+#🖥 Standalone Detection Scripts
+
+--> Detect Objects from Image
+python detect_image.py
+
+--> Detect Objects from Video
+python detect_video.py
+
+--> Live Webcam Detection
+python detect_camera.py
